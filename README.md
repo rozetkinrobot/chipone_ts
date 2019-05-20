@@ -31,10 +31,6 @@ hi10:
 ```shell
 make hi10
 ```
-make for vi10:
-```shell
-make vi10
-```
 4. Install:
 ```shell
 sudo make install
@@ -46,7 +42,7 @@ sudo makedir /lib/firmware/chipone && sudo cp icn8505-HAMP0003.fw /lib/firmware/
 
 6. Reboot your chuwi :)
 
-**P.S.** I highly recommend turning of auto-rotate.
+**P.S.** I highly recommend turning ofа auto-rotate.
 
 # License
 Source code in this repository is released under GNU GPL License.<br>
