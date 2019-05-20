@@ -13,6 +13,12 @@
 #include "chipone_types.h"
 #include "chipone.h"
 
+void do_gettimeofday_cust(struct timeval *tv){
+	struct timespec64 ts;
+	ktime_get_real_ts64(&ts);
+	tv -> tv_sec = ts.tv_sec;
+	tv -> tv_usec = ts.tv_nsec;
+}
 static int screen_max_x = SCREEN_MAX_X;
 static int screen_max_y = SCREEN_MAX_Y;
 
@@ -91,7 +97,7 @@ static irqreturn_t chipone_ts_irq_handler(int irq, void* dev_id){
 		return IRQ_HANDLED;
     }
 
-    do_gettimeofday(&data->last_irq_event);
+    do_gettimeofday_cust(&data->last_irq_event);
     gesturechanged = coordinatearea.gesture_id != data->last_coordinate_area.gesture_id;
 
     if((coordinatearea.gesture_id == 0) && (coordinatearea.num_pointer > 0)){
