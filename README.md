@@ -4,7 +4,7 @@ This repository contains a Chipone touch screen module, specifically for Chuwi v
 
 This driver should be considered "complete, but unpolished".
 
-I adaptized this driver for linux kernel 5.0.0+ but it only works on 4.18+ kernels.
+I adaptized this driver for linux kernel 5.0.0+.
 
 # URLs
 [Theme on 4pda](http://4pda.ru/forum/index.php?showtopic=692634)
