@@ -4,7 +4,7 @@ This repository contains a Chipone touch screen module, specifically for Chuwi v
 
 This driver should be considered "complete, but unpolished".
 
-I adaptized this driver for linux kernel 5.0.0+.
+I adaptized this driver for linux kernel 5.0.0+
 
 # URLs
 [Theme on 4pda](http://4pda.ru/forum/index.php?showtopic=692634)
@@ -37,7 +37,7 @@ sudo make install
 ```
 5. Copy icn8505-HAMP0003.fw into /lib/firmware/chipone/
 ```shell
-sudo makedir /lib/firmware/chipone && sudo cp icn8505-HAMP0003.fw /lib/firmware/chipone/
+sudo mkdir /lib/firmware/chipone && sudo cp icn8505-HAMP0003.fw /lib/firmware/chipone/
 ```
 
 6. Reboot your chuwi :)
